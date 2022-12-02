@@ -1,6 +1,7 @@
 <script lang="ts">
   import svelteLogo from './assets/svelte.svg'
   import Counter from './lib/Counter.svelte'
+  import NestedFullScreen from './lib/NestedFullScreen.svelte'
 </script>
 
 <main>
@@ -17,7 +18,7 @@
   <div class="card">
     <Counter />
   </div>
-
+  <NestedFullScreen/>
   <p>
     Check out <a href="https://github.com/sveltejs/kit#readme" target="_blank" rel="noreferrer">SvelteKit</a>, the official Svelte app framework powered by Vite!
   </p>
