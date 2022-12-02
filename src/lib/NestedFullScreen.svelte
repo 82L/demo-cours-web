@@ -38,10 +38,13 @@
 <button class="close-fullscreen" on:click={toggleFullScreen1}>toggle Fullscreen1</button>
 <style>
     #first-level{
-        background-color: green;
+        background-color: rgba(0,255,0,0.2);
     }
     #second-level{
-        background-color: blue;
+        background-color: rgba(0,0,255,0.2);
+    }
+    .cube::backdrop{
+        background-color: transparent;
     }
     .cube > .content{
         opacity: 0;
