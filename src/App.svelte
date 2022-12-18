@@ -1,3 +1,6 @@
+
+<!--App to show in a cumulative art form locations choosen and saved by the user-->
+
 <script lang="ts">
   import SaveManager,  { LoadSavedData, data }  from "./lib/SaveManager.svelte";
   import CoordinateSavingButton from './lib/CoordinatesSavingButton.svelte';
@@ -24,5 +27,14 @@
 <style>
   .maps-container{
     position: relative;
+    aspect-ratio: 1/1;
+    max-height: 100%;
+    background-color: red;
+  }
+  main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 </style>

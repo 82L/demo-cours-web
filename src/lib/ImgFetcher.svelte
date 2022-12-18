@@ -1,3 +1,6 @@
+
+<!--Charge an image base on the img data provided-->
+
 <script lang="ts">
     export let imgData =null;
     const mapId = "2c9d64baf253f0ed"
