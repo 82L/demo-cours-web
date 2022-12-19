@@ -15,3 +15,5 @@ The user can't remove any of the maps saved using normal manipulations, as it is
 
 To launch this website you must have a working Google Api key, to put in src/lib/ImgFetcher.svelte const apiKey.
 And type npm run build in terminal to construct the website
+
+Demo available at https://demo-cours-web.netlify.app/
