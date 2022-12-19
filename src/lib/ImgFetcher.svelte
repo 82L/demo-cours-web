@@ -4,7 +4,7 @@
 <script lang="ts">
     export let imgData =null;
     const mapId = "2c9d64baf253f0ed"
-    const apiKey = "AIzaSyDOpqarMHlQM79jhcMhE-s7CwM22f0XhR4"
+    const apiKey = ""
     const zoom= 18
     console.log(imgData)
 
@@ -23,9 +23,13 @@
 {/if}
 
 <style>
+
     .map-img{
         border-radius: 50%;
         position: absolute;
         opacity: 0.5;
+        width: 100%;
+        top:0;
+        left: 0;
     }
 </style>

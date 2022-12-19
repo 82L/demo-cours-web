@@ -25,16 +25,23 @@
 </main>
 
 <style>
+
   .maps-container{
     position: relative;
     aspect-ratio: 1/1;
-    max-height: 100%;
-    background-color: red;
+    background-color: #ffffff;
+    border-radius: 50%;
+    flex-grow: 1;
+    max-width: 100%;
   }
   main{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    width: 100%;
+    /*height: 100%;*/
+    padding: 2rem;
+    gap: 1rem;
   }
 </style>
