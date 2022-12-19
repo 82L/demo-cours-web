@@ -3,10 +3,10 @@
 
 <script lang="ts">
     export let imgData =null;
-    const mapId = "2c9d64baf253f0ed"
-    const apiKey = ""
-    const zoom= 18
-    console.log(imgData)
+    const mapId = "2c9d64baf253f0ed";
+    const apiKey = "AIzaSyCCkWjeIzdaqaCRU2XCown3TqsahvnbOS0";
+    const zoom= 19;
+    const scale = 1;
 
     function GetRotation(){
         return imgData.deviceDirection ? imgData.deviceDirection:0;
@@ -14,7 +14,7 @@
 
 </script>
 {#if imgData != null}
-    <img src="https://maps.googleapis.com/maps/api/staticmap?center={imgData.latitude},{imgData.longitude}&zoom={zoom}&size={window.screen.width}x{window.screen.width}&scale=2&format=jpg&map_id={mapId}&key={apiKey}"
+    <img src="https://maps.googleapis.com/maps/api/staticmap?center={imgData.latitude},{imgData.longitude}&zoom={zoom}&size={window.screen.width}x{window.screen.width}&scale={scale}&format=jpg&map_id={mapId}&key={apiKey}"
     alt="Plan at coordinates ({imgData.latitude},{imgData.longitude}) taken on {imgData.dateKey}"
          style="transform: rotate({GetRotation()})"
          class="map-img"
