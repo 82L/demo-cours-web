@@ -31,7 +31,6 @@
     aspect-ratio: 1 / 1;
     background-color: #ffffff;
     border-radius: 50%;
-    flex-grow: 1;
     max-width: 90vmin;
     max-height: 90vmin;
     width: 100%;
