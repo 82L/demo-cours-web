@@ -11,6 +11,8 @@
 </script>
 
 <main>
+  <h1 class="title">Map Memories</h1>
+  <div class="content">
   <button on:click={e => mapsHidden= !mapsHidden}>Toggle Maps</button>
   {#if mapsHidden}
     <CoordinateSavingButton/>
@@ -21,6 +23,7 @@
     {/each}
     </div>
   {/if}
+  </div>
 
 </main>
 
@@ -33,16 +36,30 @@
     border-radius: 50%;
     max-width: 90vmin;
     max-height: 90vmin;
-    width: 100%;
-  }
-  main{
-    display: flex;
-    flex-direction: column;
+    height: 100%;
     justify-content: center;
     align-items: center;
+    display: flex;
+  }
+  .content{
+    display: flex;
+    flex-direction: column;
+    /*justify-content: center;*/
+    align-items: center;
     width: 100%;
-    /*height: 100%;*/
-    padding: 2rem;
+    height: 100%;
+    /*flex: 1;*/
+    /*padding: 2rem;*/
     gap: 1rem;
+  }
+  main{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .title{
+    justify-self: flex-start;
+    margin-bottom: 3rem;
   }
 </style>

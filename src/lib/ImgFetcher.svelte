@@ -31,5 +31,11 @@
         width: 100%;
         top:0;
         left: 0;
+        height: 100%;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /*color: #1a1a1a;*/
     }
 </style>
